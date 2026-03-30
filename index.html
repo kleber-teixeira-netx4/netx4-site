@@ -19,9 +19,14 @@
       position: relative;
       width: 100%;
       max-width: 850px;
-      aspect-ratio: 850 / 1536;
-      background: url('./imagem_site_netx4.jpeg') center top / cover no-repeat;
       overflow: hidden;
+      line-height: 0;
+    }
+
+    .base-image {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .click-area {
@@ -34,26 +39,26 @@
     }
 
     .top-button {
-      top: 1.9%;
+      top: 1.85%;
       left: 69.2%;
-      width: 27.8%;
-      height: 4.5%;
+      width: 27.6%;
+      height: 4.45%;
     }
 
     .main-button {
-      top: 60.9%;
-      left: 9.7%;
-      width: 53.5%;
-      height: 4.3%;
+      top: 60.95%;
+      left: 10%;
+      width: 52.9%;
+      height: 4.1%;
       border-radius: 16px;
     }
 
     .email-link {
       position: absolute;
-      left: 32%;
-      bottom: 1.2%;
-      width: 36%;
-      height: 2.4%;
+      left: 31.8%;
+      bottom: 1.1%;
+      width: 36.5%;
+      height: 2.3%;
       text-indent: -9999px;
       overflow: hidden;
       white-space: nowrap;
@@ -63,7 +68,6 @@
     @media (max-width: 850px) {
       body {
         padding: 0;
-        background: #eef2f7;
       }
 
       .page {
@@ -74,6 +78,8 @@
 </head>
 <body>
   <div class="page">
+    <img class="base-image" src="./imagem_site_netx4.jpeg" alt="NetX4 Tech" />
+
     <a class="click-area top-button" href="mailto:comercial@netx4.com.br?subject=Solicitar%20avalia%C3%A7%C3%A3o%20gratuita">Solicitar avaliação gratuita</a>
 
     <a class="click-area main-button" href="mailto:comercial@netx4.com.br?subject=Consultar%20elegibilidade%20para%20incentivo%20Microsoft">Consultar elegibilidade para incentivo Microsoft</a>
