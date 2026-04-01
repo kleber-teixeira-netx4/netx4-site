@@ -11,7 +11,8 @@
       background: #eef2f7;
       font-family: Arial, Helvetica, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       padding: 0;
     }
 
@@ -65,11 +66,29 @@
       border-radius: 8px;
     }
 
-    @media (max-width: 850px) {
-      body {
-        padding: 0;
-      }
+    .institutional {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      color: #1f2a44;
+      line-height: 1.6;
+    }
 
+    .institutional h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .institutional-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    @media (max-width: 850px) {
       .page {
         max-width: 100vw;
       }
@@ -77,6 +96,7 @@
   </style>
 </head>
 <body>
+
   <div class="page">
     <img class="base-image" src="./imagem_site_netx4.jpeg" alt="NetX4 Tech" />
 
@@ -86,5 +106,47 @@
 
     <a class="email-link" href="mailto:comercial@netx4.com.br">comercial@netx4.com.br</a>
   </div>
+
+  <!-- BLOCO INSTITUCIONAL (VALIDAÇÃO MICROSOFT) -->
+  <section class="institutional">
+    <h2>Sobre a NetX4 Tech</h2>
+
+    <p>
+      A <strong>NetX4 Tech</strong> é a marca comercial da <strong>NETX4 SOLUTIONS LTDA</strong>, empresa especializada em
+      soluções de tecnologia com foco em <strong>segurança da informação</strong>, <strong>computação em nuvem</strong>,
+      <strong>infraestrutura de TI</strong> e no ecossistema Microsoft.
+    </p>
+
+    <p>
+      Atuamos apoiando empresas na implementação, adoção e evolução de ambientes tecnológicos seguros,
+      escaláveis e alinhados às melhores práticas de mercado.
+    </p>
+
+    <div class="institutional-grid">
+
+      <div>
+        <strong>Razão social:</strong> NETX4 SOLUTIONS LTDA<br>
+        <strong>Nome comercial:</strong> NetX4 Tech<br>
+        <strong>CNPJ:</strong> 65.271.144/0001-28
+      </div>
+
+      <div>
+        <strong>E-mail:</strong> comercial@netx4.com.br<br>
+        <strong>Telefone:</strong> (61) 3225-9245
+      </div>
+
+      <div>
+        <strong>Endereço:</strong><br>
+        ST SAUS QUADRA 04 BLOCO A EDIF VICTORIA OFFICE TOW, SN,<br>
+        Brasília, Distrito Federal, 70070-938, Brasil
+      </div>
+
+    </div>
+  </section>
+
+  <footer style="max-width: 850px; text-align: center; font-size: 13px; color: #555; margin-bottom: 30px;">
+    © 2026 NetX4 Tech - NETX4 SOLUTIONS LTDA | CNPJ: 65.271.144/0001-28
+  </footer>
+
 </body>
 </html>
